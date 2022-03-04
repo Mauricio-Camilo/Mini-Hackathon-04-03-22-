@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mini Hackathon</title>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            Olá, digite as coordenadas que deseja saber o clima ou deixe que nós rastreamos sua localização
+        </header>
+        <div class="dados-manuais">
+            <div class="entrada-dados">
+                <input class="latitude input" type="text" placeholder="Digite aqui sua latitude"
+                    required>
+                <input class="longitude input" type="text" placeholder="Digite aqui sua longitude"
+                    required>
+            </div>
+            <button class="botao-1" onclick="localizarManualmente()">
+                <p>Avançar</p>
+            </button>
+        </div>
+        <button class="botao-2" onclick="buscarLocalizacao()">
+            <p>Rastrear</p>
+            <p>automaticamente</p>
+        </button>
+    </main>
+
+    <section class="pagina-dados">
+    </section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
