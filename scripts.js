@@ -1,5 +1,5 @@
 
-const API = "http://api.openweathermap.org/data/2.5/weather?";
+const API = "https://api.openweathermap.org/data/2.5/weather?";
 const chave = "appid=056ac55ba477e7e036e90e45e4265f56";
 let latitude = "";
 let longitude = "";
